@@ -1,20 +1,893 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* imports */
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/* =============================== events list =============================== */
+
+/* link */
+li {
+    display: inline;
+}
+
+header {
+	text-align: center;
+	margin: auto;
+	background-color: #fff;
+	top: 0;
+	height: 90px;
+	width: 100%;
+	padding-top: 10px;
+	opacity: .8;    
+	overflow: hidden;	
+	z-index: 999;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.masthead.shrink {
+    height: 10px;
+    line-height:10px;
+}
+
+.masthead .container {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.masthead.shrink .container {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.navigation.menus.stuck {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 99999999;
+	background-color: #fff;
+	opacity: .8;
+}
 
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+.sticky-wrapper {
+		z-index: 99999999;
+	background-color: #fff;
+	opacity: .8;
 }
+*/
+
+
+
+/* the actual header box */
+.masthead {
+-webkit-transition: 2s ease-out;
+transition: 2s ease-out;
+
+}
+
+
+body {
+	margin:0px auto; 
+	padding-top: 10px;
+	overflow: scroll;
+	font-family: 'open sans', Helvetica, sans-serif;  
+	font-size: 11.5px; 
+	background-color: #fff;
+	color: #454545;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 1.75px;
+	line-height: 13px;
+	padding-bottom: 50px;
+	
+}
+
+.body p strong {
+	text-transform: uppercase;
+}
+
+.body p em {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1 {
+	line-height: 26px;
+}
+
+h2 {
+	padding-bottom: 15px;
+	text-color:#b7b7b7;
+}
+
+h2.name {
+	font-size: 10px;
+	
+}
+
+
+/* body text  */
+p {
+	margin-top: 5px;
+	text-transform: none;
+	letter-spacing: 0px;
+/* 	padding-bottom: 20px; */
+/* 	text-transform: none; */
+}
+
+a {
+	text-decoration: none;
+	color: #454545;
+}
+
+a:hover {
+	color: #33bc9a; 
+	
+}
+
+
+
+
+/* body content */
+.main {
+	max-width: 600px;
+	padding-top: 10%;
+	margin: auto;
+	position: relative;
+	
+}
+
+
+
+/* header padding */
+ul.menu {
+	padding: 8px;
+}
+
+
+
+/* header styles */
+.brand {
+	font-family: 'open sans', Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	z-index: 20;
+
+
+
+}
+
+.brand a {
+	text-decoration: none;
+	color:#000;
+}
+
+
+
+/* header nav buttons */
+ul.menu.level-1 a{
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 13px;
+	font-weight: 700;
+	
+}
+
+
+/* social media */
+.menus.social {
+	position: absolute;
+	top: 0;
+	left:0;
+	padding-left: 40px;
+}
+
+.menus.social a.link {
+	font-size: 15px;	
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+[href*="twitter"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="twitter"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="twitter"]:after {
+	content: '\f099';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #33bc9a;
+	font-family: 'FontAwesome';
+}
+
+
+[href*="tumblr"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="tumblr"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="tumblr"]:after {
+	content: '\f173';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #33bc9a;
+	font-family: 'FontAwesome';
+}
+
+
+[href*="vimeo"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="vimeo"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="vimeo"]:after {
+	content: '\f194';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	padding-right: 2px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #33bc9a;
+	font-family: 'FontAwesome';
+}
+
+[href*="portfolios"] {
+	display: inline-block;
+	width: 19px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="portfolios"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="portfolios"]:after {
+	content: '\f1b4';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #33bc9a;
+	font-family: 'FontAwesome';
+}
+
+
+[href*="flickr"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+[href*="flickr"]:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+[href*="flickr"]:after {
+	content: '\f16e';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #33bc9a;
+	font-family: 'FontAwesome';
+}
+
+/* ------------------------------------------------- home page -------------------------------------------------  */
+.event.item.teaser .meta,
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15%;;
+
+}
+
+
+
+/* horizontal scroll */
+/*
+ul.ui.items.events  {
+	float: left;
+	width: 100%;
+	height: 400px;
+	overflow-x: scroll;
+    overflow-y: inherit;
+    white-space: nowrap;
+    padding-right: 0;    
+}
+
+.events .ui.items.events .teaser.item.event{
+	margin: 0;
+	border: none;
+	width: 250px;
+	display: inline-block;
+    vertical-align: middle;	
+    float: left;
+}
+
+.events .ui.items.events .teaser.item.event .attach img {
+	margin: 0;
+	border: none;
+	width: 250px;
+    float: left;
+}
+
+.events .ui.items.events .teaser.item.event .attach .body {
+	margin: 0;
+	border: none;
+	max-width: 200px;
+    float: left;
+}
+
+.ui.items.events {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.ui.items.events .teaser.item.event {
+	overflow: visible;
+	padding: 0;
+}
+
+
+.ui.items.events .body {
+	display: inline-block;
+}
+*/
+
+
+
+/* spotify */
+.main .spotify .playlist.item .header .heading {
+	visibility: hidden;
+}
+
+section.spotify {
+	float: left;
+	overflow: hidden;
+	position: fixed;
+	top: 70px;
+	left: 0;
+	margin-left: 75%;
+	
+}
+s
+
+
+/* artist names */
+.gallery .slides .caption h2.name {
+	font-size:10px;
+	margin-top: 0;
+}
+
+
+
+/* ------------------------------------------------- events -------------------------------------------------  */
+
+/* home page */
+.lede .attach {
+	width: 600px;
+}
+
+.ui.items.events {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.gallery .slides {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+/* event contents */
+.events.items .event:nth-child(1n+6){
+	display: none;
+}
+
+.event.item {
+	display: table;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 15%;
+}
+
+.event.item .attach {
+	display: table-header-group;
+}
+
+.event.item .content {
+	display: table-caption;
+	padding-top: 5%;
+	
+}
+
+.event.item .content .copy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 70%;
+		
+}
+
+.event.item .footer {
+	display: table-footer-group;
+	font-size: 8px;
+	line-height: 8px;
+	position: absolute;
+	top: 100%;
+	
+}
+
+.event.item .meta {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15%;
+	
+}
+	
+a.tag { 
+	top: 0;
+}
+
+
+
+/* body text */
+.copy {
+	max-width: 500px;
+}
+
+
+
+/* login nav bar */
+.utility.menus form {
+	width: 268px;
+	position: absolute;
+	top: 10px;
+	right:50px;
+}
+
+.utility.menus input {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.utility.menus .field {
+	width: 214px;
+	float: left;
+}
+
+.utility.menus .action {
+	width: 50px;
+	float: left;
+}
+
+.utility.menus ul.menu a{
+	font-size: 8.5px;
+	padding-left: 5px;
+	padding-right: 8px;
+}
+
+.utility.menus ul.menu{
+	position: absolute;
+	right: 38px;
+	top:15px;
+	
+}
+
+
+
+/* bottom subscribe box */
+.input {
+    border: 1px solid #454545;
+    background: #fff;
+  
+}
+
+input#mc-embedded-subscribe.button {
+	border: 1px solid #454545;
+	background: #fff;
+	
+}
+
+.control {
+    border: 1px solid #454545;
+    background: #fff;
+    
+}
+
+.form {
+	display: inline-table;
+
+}
+
+
+
+/* page nav */
+.paging.menus .paginate.menu {
+	margin-top: 60px;
+	padding-left: 115px;
+
+}
+
+.paging.menus .paginate.menu a{
+	font-size: 30px;
+	font-weight: 800;
+	padding-left: 40px;
+}
+
+
+
+/* footer */
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;	
+	overflow: hidden;
+	z-index: 10;
+}
+
+.canvas footer {
+	background: #33bc9a;
+}
+
+.footer.footer {
+	height: 30px;
+}
+
+.footer .departments.menus, 
+.footer .legal {
+	float: left;
+	font-size: 10px;
+	color: white;
+
+}
+
+.footer .departments.menus a.link {
+	padding-left: 10px;
+	color: white;
+}
+
+.footer .departments.menus ul.menu{
+	margin: 0;
+}
+
+.footer .legal {
+	float: right;
+	font-size: 8.5px;
+	padding-right: 20px;
+	text-transform: uppercase;
+	
+}
+
+
+
+/* calendar */
+.segment.calendar {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+}
+
+a.rss {
+	visibility: hidden;
+}
+
+.archives.segment {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+/* entire bottom */
+.sub {
+	right: 20%;
+	left: 20%;
+	width: 600px;
+	position: absolute;
+	padding-bottom: 40px;
+	padding-top: 30px;
+	float: left;
+	margin-left: 0;
+	
+}
+.sub .menu {
+	width: 100px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.sub .segment.subscribe {
+
+	float:right;
+}
+
+#mc_embed_signup_scroll h2 {
+	font-size: 9px;
+	padding: 0;
+
+}
+
+
+/* format menu */
+.segment.menus.formats ul{
+	
+	margin: 0;
+	margin-top: 70px;
+	padding-left: 0;
+}
+
+
+/* interests */
+.segment.menus.tags h2{
+	font-size: 10px;
+	padding: 0;
+}
+
+.segment.menus.tags ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+/* ---------------------- profile detail ---------------------------- */
+
+header.header {
+	position: absolute;
+	text-align: left;
+	background: none;
+	color: black;
+	margin-top: 15%;
+	z-index: 0;
+
+}
+
+.h-entry {
+	max-width: 600px;
+	padding-top: 13%;
+	margin: auto;
+	position: relative;
+	
+}
+
+.h-entry p {
+	display: table;
+	float: left;
+}
+
+.h-entry story .attach {
+	padding: 0;
+	margin: 0;
+}
+
+
+img.src {
+	max-width: 500px;
+}
+
+.story.h-entry > .attach  {
+	margin-top: 65px;
+	margin-left: 0;
+
+}
+
+.story.h-entry .attach img {
+	width: 500px;
+	
+}
+
+
+.story.h-entry .body p {
+	text-transform: none;
+	letter-spacing: 0px;
+}
+
+
+/* profiles */
+.profiles { 
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+.profiles .card.profile {
+    width: 200px;
+    height: 110px;
+    float: left;
+    padding-right:60px;
+    
+}
+
+
+
+/* profile image */
+.profiles .card.profile .attach {
+	padding: 0;
+	margin: 0;
+}
+
+.profiles .card.profile .attach img {
+	width: 90px;
+}
+
+
+
+/* profile accounts */
+.profiles .card.profile .content{
+	width: 100px;
+	float: right;
+}
+
+.profiles .card.profile .content .heading {
+	margin-top:0;
+	font-weight: 700;
+}
+
+.profiles .card.profile .content .list.link {
+	display: table-cell;
+	width: 40px;
+
+}
+
+
+
+/* profile pics */
+.content .profiles .card.profile .attach {
+	display: inline-block;
+}
+
+.card.profile ul.link.list {
+	font-size: 8px;	
+	display: inline-block;
+	margin-top:0;
+	padding-top: 0;
+}
+
+.link.list {
+	padding-left: 0;
+}
+
+.content .profiles figure.attach {
+	padding-left: 0;
+	margin-left: 0;
+}
+
+
+
+/* horizontal scroll */
+aside.gallery.segment {
+	float: left;
+	max-width: 600px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-right: 0;
+    
+}
+
+.gallery.segment img{
+	margin: 0;
+	border: none;
+	width: 300px;
+	display: inline-block;
+    vertical-align: middle;	
+    float: left;
+}
+
+.segment.gallery {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.segment.gallery .slides {
+	overflow: visible;
+	padding: 0;
+}
+
+
+.segment.gallery .slide {
+	display: inline-block;
+}
+
+
+
+/* tags */
+.header .categories,
+.header .tags,
+.header .byline {
+	font-size: 8px;
+}
+
+.header .byline .story {
+	font-weight: 700;
+}
+
+
+
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -36,233 +909,24 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+::-webkit-scrollbar {
+      width: 15px;
+} /* this targets the default scrollbar (compulsory) */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screen readers: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+::-webkit-scrollbar-track {
+      background-color: #fff;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
