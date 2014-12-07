@@ -192,12 +192,26 @@ ul.menu.level-1 a{
 	font-weight: 700;
 }
 
+.header .meta .date,
+.header .meta .location {
+	padding: 0;
+	margin: 0;
+}
 
 .items.events.ui .item.event .content .header {
 	width: 600px;
 }
-.items.events.ui .item.event .attach{
+
+.items.events.ui .item.event .content .header .meta {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15%;
+}
+
+.items.events.ui .item.event .attach img{
 	width: 600px;
+	margin: auto;
 }
 
 .items.events.ui .item.event .copy p{
@@ -378,7 +392,7 @@ ul.menu.level-1 a{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 15%;;
+	width: 15%;
 
 }
 
@@ -737,6 +751,19 @@ a.rss {
 	margin: 0;
 	padding: 0;
 }
+
+
+/* ---------------------- graphic design blog ------------------------- */
+.main.content.ui .blog.lede.ui .attach.ui img{
+	width: 600px;
+	margin: auto;
+}
+
+.main.content.ui .items.posts.ui .items.list.ui .item.post.ui .item.attach.ui img{
+	width: 600px;
+	margin: auto;
+}
+
 
 
 /* --------------------- event detail ------------------------ */
