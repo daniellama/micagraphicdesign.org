@@ -494,6 +494,11 @@ s
 }
 
 
+.shim .page .main {
+	padding-top: 0;
+}
+
+
 /* event contents */
 .events.items .event:nth-child(1n+6){
 	display: none;
@@ -649,6 +654,7 @@ input#mc-embedded-subscribe.button {
 
 .footer.footer {
 	height: 30px;
+	position: fixed;
 }
 
 .footer .departments.menus{
@@ -667,13 +673,15 @@ input#mc-embedded-subscribe.button {
 	margin: 0;
 }
 
-.footer p {
+
+
+.footer .legal {
+	width: 100%;
 	float: right;
+	text-transform: uppercase;
+	color: white;
 	font-size: 8.5px;
 	padding-right: 20px;
-	color: white;
-	text-transform: uppercase;
-	
 }
 
 
