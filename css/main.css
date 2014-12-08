@@ -772,6 +772,39 @@ a.rss {
 	margin: auto;
 }
 
+/* -------------------------- news list ----------------------------------- */
+.items.pagination.menus.ui .menu.ui {
+	margin: 0;
+	padding: 0;
+}
+
+.items.pagination.menus.ui .menus.title,
+.categories.menus.segment.ui .menus.title {
+	visibility: hidden;	
+}
+
+.items.pagination.menus .menu.ui .item .prev.page.link,
+.items.pagination.menus .menu.ui .item .next.page.link {
+	visibility: hidden;
+	width: 600px;
+	margin: auto;
+}
+
+.items.pagination.menus .menu.ui .item .prev.page.link:after {
+	visibility: visible;
+	content: '←';
+	font-size: 20px;
+	
+}
+
+.items.pagination.menus .menu.ui .item .next.page.link:after {
+	visibility: visible;
+	content: '→';
+	font-size: 20px;
+	
+}
+
+
 
 
 /* --------------------- event detail ------------------------ */
@@ -997,6 +1030,7 @@ aside.gallery.segment {
 .header .tags,
 .header .byline {
 	font-size: 8px;
+	line-height: 8px;
 }
 
 .header .byline .story {
